@@ -138,7 +138,7 @@ const MainHeading = styled.h1`
     line-height: 1.4em;
 `;
 const RightContainer = styled.div`
-    background: #efefef;
+    background: rgb(252 215 224);
     width: 45%;
     display: flex;
     align-items: flex-end;

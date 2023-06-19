@@ -1,5 +1,4 @@
 import "./App.css";
-// import { createContext, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./components/screens/MainPage"
 import NoMatch from "./components/screens/NoMatch";
