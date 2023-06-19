@@ -3,7 +3,6 @@ import Header from "../includes/Header";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-// import { Context } from "../context/store";
 
 function Category() {
     const [selectedOption, setSelectedOption] = useState("");

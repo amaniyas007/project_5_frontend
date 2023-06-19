@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../context/store";
 import { quizConfig } from "../../axiosConfig";
 import { Helmet } from "react-helmet";
-// import { UserContext } from "../../App";
 
 export default function SignUp() {
     const { state, dispatch } = useContext(Context);
@@ -45,7 +44,6 @@ export default function SignUp() {
                 }
             })
             .catch((error) => {
-                // console.log("error", error.response);
                 if (error.response.status === 500) {
                     setMessage("Name,Email and Password:Field is required");
                 }

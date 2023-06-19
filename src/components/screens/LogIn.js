@@ -11,7 +11,7 @@ export default function LogIn() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const navigate = useNavigate();
-    // console.log(state,"rrr");
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setMessage("");
@@ -22,7 +22,6 @@ export default function LogIn() {
             })
             .then((response) => {
                 let data = response.data;
-                // console.log(data.access,"555");
                 const user_details = {
                     is_verified: true,
                     access_token: data.access,
@@ -172,7 +171,7 @@ const LoginButton = styled(Link)`
     font-size: 20px;
 `;
 const SubmitButton = styled.button`
-    background: color: rgb(125 36 67);
+    background:rgb(125 36 67);
     border: 0;
     outline: 0;
     color: #fff;

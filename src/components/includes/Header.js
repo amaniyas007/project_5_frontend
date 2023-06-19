@@ -1,12 +1,9 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-// import { Context } from "../context/store";
 
 function Header() {
     const navigate = useNavigate();
-    // const { state:{  user_details} } = useContext(Context);
-    // console.log(  user_details,"  user_details");
     const userDetails = JSON.parse(localStorage.getItem("user_details"));
     const handleLogout = () => {
         localStorage.clear();
@@ -70,6 +67,6 @@ const Button = styled.div`
     }
 `;
 const LoginText = styled.h2`
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 `;

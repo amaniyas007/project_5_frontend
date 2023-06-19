@@ -9,7 +9,7 @@ function NoMatch() {
 
 export default NoMatch;
 
-const NoMatchText = styled.h1`
+const NoMatchErrorText = styled.h1`
     font-size: 50px;
     text-align: center;
 `;
